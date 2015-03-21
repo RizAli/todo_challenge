@@ -19,4 +19,11 @@ describe('Controller: MainCtrl', function () {
     expect(scope.todos.length).toBe(0);
   });
 
+  it("should allow to type text and add todo to the list", function(){
+    scope.todo = 'Test 1';
+    scope.addTlsodo();
+    expect(scope.todos.length).toBe(1);
+  });
+
+
 });

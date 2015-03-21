@@ -9,3 +9,6 @@ http://www.angularjsbook.com/angular-basics/chapters/basics/
 
 Start server using
 grunt serve -- force
+
+
+<div ng-repeat="(key, value) in myObj"> ... </div>
