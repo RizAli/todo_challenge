@@ -1,0 +1,7 @@
+<input type='checkbox' ng-init='feeling = "love it"' ng-model='feeling'
+    ng-true-value='"love it"' ng-false-value='"hate it"'>
+is bound to
+"<strong ng-bind="feeling"></strong>".
+Change it!
+
+http://www.angularjsbook.com/angular-basics/chapters/basics/
