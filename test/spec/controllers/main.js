@@ -21,9 +21,15 @@ describe('Controller: MainCtrl', function () {
 
   it("should allow to type text and add todo to the list", function(){
     scope.todo = 'Test 1';
-    scope.addTlsodo();
+    scope.addTodo();
     expect(scope.todos.length).toBe(1);
   });
 
+  it("should allow to remove a todo form the list", function(){
+    scope.todo ="Test 1";
+    scope.addTodo();
+    scope.removeTodo();
+    expect(scope.todos.length).toBe(0);
+  });
 
 });
