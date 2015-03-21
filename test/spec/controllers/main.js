@@ -5,8 +5,7 @@ describe('Controller: MainCtrl', function () {
   // load the controller's module
   beforeEach(module('todoChallengeApp'));
 
-  var MainCtrl,
-    scope;
+  var MainCtrl, scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
@@ -16,7 +15,8 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of todos to the scope', function () {
-    expect(scope.todos.length).toBe(4);
+  it("should have no items to start with", function(){
+    expect(scope.todos.length).toBe(0);
   });
+
 });
